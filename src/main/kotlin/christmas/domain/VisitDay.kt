@@ -1,4 +1,4 @@
 package christmas.domain
 
-class VisitDay {
+class VisitDay(private val day: Int) {
 }
