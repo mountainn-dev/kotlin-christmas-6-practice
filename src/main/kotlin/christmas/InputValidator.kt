@@ -10,7 +10,11 @@ class InputValidator {
         require(!input.contains(" "))
     }
 
-    fun hasWordsDivider(input: String) {
-        require(input.contains(","))
+    fun hasOrderDivider(input: String) {
+        require(input.contains("-"))
+    }
+
+    fun isDigit(input: String) {
+        require(!input.map { Character.isDigit(it) }.contains(false))
     }
 }

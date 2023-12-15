@@ -1,6 +1,6 @@
 package christmas.domain
 
-enum class Menu(name: String, price: Int) {
+enum class Menu(private val menuName: String, private val price: Int) {
     MUSHROOM_SOUP("양송이수프", 6000),
     TAPAS("타파스", 5500),
     SIZER_SALAD("시저샐러드", 8000),
@@ -12,5 +12,7 @@ enum class Menu(name: String, price: Int) {
     ICE_CREAM("아이스크림", 5000),
     ZERO_COKE("제로콜라", 3000),
     RED_WINE("레드와인", 60000),
-    CHAMPAGNE("샴페인", 25000)
+    CHAMPAGNE("샴페인", 25000);
+
+    fun isSame(name: String) = this.menuName == name
 }
