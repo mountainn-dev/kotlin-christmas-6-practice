@@ -1,4 +1,4 @@
 package christmas.domain
 
-class Order {
+class Order(private val menu: Menu, private val count: Int) {
 }
