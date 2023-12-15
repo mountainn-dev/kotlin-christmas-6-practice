@@ -13,4 +13,6 @@ class VisitDay(private val day: Int) {
     fun isWeekEnd() = WEEKEND.contains(day)
 
     fun isSpecial() = SPECIAL.contains(day)
+
+    fun dayUntilXmas() = 25 - day
 }
