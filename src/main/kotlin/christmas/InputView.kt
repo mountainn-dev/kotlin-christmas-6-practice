@@ -1,5 +1,4 @@
 package christmas
 
-fun main() {
-
+class InputView {
 }
