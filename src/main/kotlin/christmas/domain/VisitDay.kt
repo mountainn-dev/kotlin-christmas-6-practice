@@ -15,4 +15,6 @@ class VisitDay(private val day: Int) {
     fun isSpecial() = SPECIAL.contains(day)
 
     fun dayUntilXmas() = 25 - day
+
+    fun isAfterXmas() = day > 25
 }

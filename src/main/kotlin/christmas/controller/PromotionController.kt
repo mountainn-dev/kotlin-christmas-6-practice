@@ -16,6 +16,8 @@ class PromotionController {
     private fun applyPromotion(visitDay: VisitDay, orders: List<Order>) {
         if (visitDay.isWeekDay()) weekDayPromotion(orders)
         if (visitDay.isWeekEnd()) weekEndPromotion(orders)
+        if (visitDay.isSpecial()) specialPromotion()
+
     }
 
     private fun weekDayPromotion(orders: List<Order>) {
@@ -33,4 +35,10 @@ class PromotionController {
 
         promotions.add(Promotion(WEEKEND_EVENT, WEEKEND_EVENT.value() * count))
     }
+
+    private fun specialPromotion() {
+        promotions.add(Promotion(SPECIAL_EVENT, SPECIAL_EVENT.value()))
+    }
+
+
 }
