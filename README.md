@@ -6,7 +6,11 @@
   - [x] 값이 올바르지 않은 경우 예외가 발생하고 에러 메세지 출력 후 재입력을 받는다. - InputValidator, VisitDay
   - [x] 방문 날짜는 이벤트 플래너의 Calendar 상 어느 날에 속하는지 알 수 있다. - Calendar, VisitDay
   - [x] 방문 날짜는 크리스마스로부터 며칠 남았는지 알 수 있다. - VisitDay#dayUntilXmas()
-- [ ] 메뉴를 주문한다.
+- [x] 메뉴를 주문한다.
+  - [x] 주문 메뉴와 개수를 입력한다. - OrderController#setOrder()
+  - [x] 값이 올바르지 않은 경우 예외가 발생하고 에러 메세지 출력 후 재입력을 받는다. InputValidator, InputView, Order
+  - [x] 주문 메뉴가 어떤 카테고리에 속하는지 확인할 수 있다. - Order#isDessert()...
+  - [x] 주문 메뉴의 주문 개수를 확인할 수 있다. - Order#count()
 - [ ] 이벤트 프로모션을 적용한다.
 - [ ] 프로모션 적용 결과를 출력한다.
 
