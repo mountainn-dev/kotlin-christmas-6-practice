@@ -15,4 +15,6 @@ enum class Menu(private val menuName: String, private val price: Int) {
     CHAMPAGNE("샴페인", 25000);
 
     fun isSame(name: String) = this.menuName == name
+
+    fun price() = this.price
 }

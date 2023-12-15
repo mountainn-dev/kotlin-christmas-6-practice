@@ -17,4 +17,6 @@ class Order(private val menu: Menu, private val count: Int) {
     fun isDrink() = DRINK.contains(menu)
 
     fun count() = this.count
+
+    fun total() = menu.price() * this.count
 }
